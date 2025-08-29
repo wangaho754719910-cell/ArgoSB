@@ -1,5 +1,29 @@
 ## ArgoSB一键无交互小钢炮脚本💣：极简 + 轻量 + 快速
 
+def gen_vmess(conf):
+    # 生成vmess链接
+    return f"vmess://{conf}"
+
+def gen_vless(conf):
+    # 生成vless链接
+    return f"vless://{conf}"
+
+def gen_trojan(conf):
+    # 生成trojan链接
+    return f"trojan://{conf}"
+
+def main():
+    # 此处根据用户输入选择协议
+    protocol = input("请选择协议（vmess/vless/trojan...）：")
+    conf = input("请输入配置参数：")
+    if protocol == "vmess":
+        print(gen_vmess(conf))
+    elif protocol == "vless":
+        print(gen_vless(conf))
+    elif protocol == "trojan":
+        print(gen_trojan(conf))
+    else:
+
 ---------------------------------------
 
 <img width="636" height="238" alt="0cbc3f82134b4fc99afd6cee37e98be" src="https://github.com/user-attachments/assets/a76ca418-badb-4e9a-a771-6682ec713e06" />
