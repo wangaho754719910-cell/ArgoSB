@@ -1,0 +1,1 @@
+def gen_vmess(conf): # 生成vmess链接 return f"vmess://{conf}"
